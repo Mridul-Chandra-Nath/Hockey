@@ -14,11 +14,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <style>
-            .font-manrope{
-                font-family: 'Manrope', sans-serif;
+    <!-- Customized script -->
+    <!-- Customized script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#FF4240',
+                    }
+                }
             }
-        </style>
+        }
+    </script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
 
 
@@ -53,25 +68,27 @@
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl font-semibold">Hockey's</a>
+                <a class="btn btn-ghost text-3xl font-bold tracking-tight">Hockey<span class="text-primaryColor">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Pages</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
+            <div class="navbar-end gap-4">
+                <!-- Search button -->
+                <div class="relative hidden md:block lg:block">
+                    <input type="text" class="py-2 px-4 border border-gray-300 rounded-full focus:border-blue-500 w-full" placeholder="🔍"; Search...">
+                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+                <a class="btn text-xl">Button</a>
             </div>
         </div>
 
