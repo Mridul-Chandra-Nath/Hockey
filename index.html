@@ -42,7 +42,7 @@
     <h1 class=""></h1>
 </head>
 
-<body class="font-mono">
+<body class="font-manrope">
     <!-- Navigation bar section -->
     <section>
         <div class="navbar bg-base-100">
@@ -57,21 +57,17 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Pages</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-3xl font-bold tracking-tight">Hockey<span class="text-primaryColor">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-xl">
+                <ul class="menu menu-horizontal px-1 text-xs">
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
@@ -88,13 +84,43 @@
                     </div>
 
                 </div>
-                <a class="btn text-xl">Button</a>
+                <a class="btn text-xl bg-primaryColor text-white">Get Ticket</a>
             </div>
         </div>
 
     </section>
     <!-- Slighter or Carousel section -->
-    <section>
+    <section class="my-10 ">
+        <div class="carousel flex  mx-auto max-w-5xl lg:h-[550px] items-center">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
 
     </section>
 
